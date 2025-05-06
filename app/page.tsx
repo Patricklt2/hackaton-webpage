@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 
 import {
@@ -30,29 +32,6 @@ import joi from "joi";
 import useStore from "../config/storeConfig";
 import NewJury from "../components/NewJury";
 import Mentor from "../components/Mentor";
-
-// const Subtitle = styled(Text)`
-//   font-size: 14px;
-//   text-transform: uppercase;
-//   color: #b1b7c2;
-// `;
-
-// const Separator = styled.span`
-//   border-left: 1px solid #b1b7c2;
-//   margin-left: 16px;
-//   margin-right: 16px;
-// `;
-
-// const Badge = styled.span`
-//   color: #2f323a;
-//   background-color: #bdc4cf;
-//   text-transform: uppercase;
-//   border-radius: 4px;
-//   padding: 5px 6px;
-//   font-size: 13px;
-//   font-weight: 500;
-//   margin-right: 8px;
-// `;
 
 const PrimaryButton = styled(Button)`
   border-radius: 4px;
@@ -648,61 +627,6 @@ const MentorsSection = ({ ...extendedProps }) => {
     </VStack>
   );
 };
-
-// const WorkshopsSection = ({ ...extendedProps }) => {
-//   const workshopsPhotos = [
-//     "/images/course_example.jpg",
-//     "/images/course_example.jpg",
-//     "/images/course_example.jpg",
-//     "/images/course_example.jpg",
-//     "/images/course_example.jpg",
-//   ];
-//   return (
-//     <Stack
-//       direction={["column", "column", "row", "row", "row"]}
-//       backgroundColor="#24335d"
-//       width="full"
-//       paddingY="8%"
-//       {...extendedProps}
-//     >
-//       <VStack
-//         alignItems="start"
-//         width={["100%", "100%", "40%", "40%", "40%"]}
-//         pl="6%"
-//         spacing="4%"
-//       >
-//         <Heading color="CSGreen" size={HeadingSize}>
-//           Workshops
-//         </Heading>
-//         <Text fontSize={TextSize} width="80%">
-//           Workshops en vivo con .... Lorem ipsum dolor sit amet, consectetur
-//           adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-//           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-//           ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
-//         </Text>
-//       </VStack>
-//       <Grid
-//         p="2%"
-//         templateColumns={[
-//           "repeat(2, 1fr)",
-//           "repeat(2, 1fr)",
-//           "repeat(2, 1fr)",
-//           "repeat(3, 1fr)",
-//           "repeat(3, 1fr)",
-//         ]}
-//         gap="4%"
-//       >
-//         {workshopsPhotos.map((photo, index) => {
-//           return (
-//             <GridItem key={index}>
-//               <Img src={photo} alt="course image"></Img>
-//             </GridItem>
-//           );
-//         })}
-//       </Grid>
-//     </Stack>
-//   );
-// };
 
 const SponsorsSection = ({ ...extendedProps }) => {
   const sponsors = [

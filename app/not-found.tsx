@@ -1,3 +1,4 @@
+'use client';
 import { Heading, Container } from "@chakra-ui/react";
 
 const Custom404 = () => {

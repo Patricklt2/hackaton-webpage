@@ -1,3 +1,4 @@
+'use client';
 // NOTE: Deprecated, not in use in the app
 import {
   Text,

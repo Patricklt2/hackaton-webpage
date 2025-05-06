@@ -1,3 +1,4 @@
+'use client';
 import { AddIcon, MinusIcon, CloseIcon } from "@chakra-ui/icons";
 import { MdPresentToAll } from "react-icons/md";
 import {

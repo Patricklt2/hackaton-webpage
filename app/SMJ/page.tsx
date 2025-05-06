@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { EmailIcon, CloseIcon, CheckCircleIcon } from "@chakra-ui/icons";

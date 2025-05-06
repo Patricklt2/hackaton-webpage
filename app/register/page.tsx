@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useSteps } from "chakra-ui-steps";
@@ -13,10 +15,10 @@ import {
   CircularProgress,
 } from "@chakra-ui/react";
 import { CheckCircleIcon, CloseIcon } from "@chakra-ui/icons";
-import FirstStep from "./firstStep";
-import ThirdStep from "./thirdStep";
-import FourthStep from "./fourthStep";
-import FifthStep from "./fifthStep";
+import FirstStep from "../../components/registerSteps/firstStep";
+import ThirdStep from "../../components/registerSteps/thirdStep";
+import FourthStep from "../../components/registerSteps/fourthStep";
+import FifthStep from "../../components/registerSteps/fifthStep";
 import useStore from "../../config/storeConfig";
 import LoadingSpinner from "../../components/UI/LoadingSpinner";
 

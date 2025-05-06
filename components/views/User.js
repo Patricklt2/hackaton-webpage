@@ -1,3 +1,4 @@
+'use client';
 import { Box, Button, Flex, Text, Textarea, useToast } from "@chakra-ui/react";
 import { use, useCallback, useEffect, useState } from "react";
 import { axiosApiInstance } from "../../config/axiosConfig";

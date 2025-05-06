@@ -1,3 +1,5 @@
+'use client';
+
 import { EmailIcon, LockIcon, ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import {
   Button,
@@ -17,7 +19,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import auth from "../../config/firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import useStore from "../../config/storeConfig";
 import { axiosApiInstance, setAxiosToken } from "../../config/axiosConfig";
 

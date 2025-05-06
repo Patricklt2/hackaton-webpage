@@ -1,3 +1,5 @@
+"use client";
+
 import { Text, Img, VStack, Box, IconButton, HStack } from "@chakra-ui/react";
 import { FaLinkedin } from "react-icons/fa";
 const Chronicles = () => {
