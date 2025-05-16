@@ -16,6 +16,8 @@ const buttonVariants = cva(
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          ingresar: "bg-cs-lightBlue border border-input hover:bg-transparent hover:text-cs-lightBlue hover:border-cs-lightBlue text-cs-darkBlue text-xl",
+          inscribirse: "bg-cs-lightOrange border rounded-[4px] border-input hover:bg-transparent hover:text-cs-lightOrange hover:border-cs-lightOrange text-cs-darkBlue",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
@@ -24,6 +26,13 @@ const buttonVariants = cva(
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        responsive: `
+        text-[0.625rem] xs:text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl
+        h-4 xs:h-5 sm:h-6 md:h-7 lg:h-8 xl:h-10
+        px-0.5 xs:px-0.5 sm:px-1 md:px-2 lg:px-2 xl:px-3
+        py-0.5 xs:py-0.5 sm:py-0.5 md:py-1 lg:py-1 xl:py-1
+        rounded-[4px]
+      `
       },
     },
     defaultVariants: {
