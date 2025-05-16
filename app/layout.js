@@ -1,3 +1,4 @@
+import "./global.css";
 import React from 'react';
 import { ChakraUIProvider } from './chakra-provider';
 import Animated from './animate-prescence';
