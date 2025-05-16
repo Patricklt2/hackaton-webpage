@@ -27,7 +27,19 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
+
+    --cs-green: 168 99% 40%;
+    --cs-orange: 39 100% 50%;
+    --cs-blue: 216 98% 47%;
+    --cs-light-blue: 183 81% 80%;
+    --cs-light-orange: 37 92% 80%;
+    --cs-darker-light-orange: 38 56% 68%;
+    --cs-mid-orange: 23 86% 56%;
+    --cs-dark-orange: 28 91% 42%;
+    --cs-dark-blue: 231 54% 12%;
+    --cs-alt-field: 225 18% 13%;
+    --cs-red: 356 96% 46%;
   }
   .dark {
     --background: 0 0% 3.9%;

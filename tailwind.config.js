@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ["class"],
-    content: ["./app/**/*.{ts,js,tsx}",
-    "./components/**/*.{ts,js,tsx}",
-    "./lib/**/*.{ts,js,tsx}"],
+    content: ["./app/**/*.{ts,js,tsx,jsx}",
+    "./components/**/*.{ts,js,tsx,jsx}",
+    "./lib/**/*.{ts,js,tsx,jsx}"],
   theme: {
   	extend: {
   		borderRadius: {
@@ -51,7 +51,20 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			  cs: {
+				green: 'hsl(var(--cs-green))',
+				orange: 'hsl(var(--cs-orange))',
+				blue: 'hsl(var(--cs-blue))',
+				lightBlue: 'hsl(var(--cs-light-blue))',
+				lightOrange: 'hsl(var(--cs-light-orange))',
+				darkerLightOrange: 'hsl(var(--cs-darker-light-orange))',
+				midOrange: 'hsl(var(--cs-mid-orange))',
+				darkOrange: 'hsl(var(--cs-dark-orange))',
+				darkBlue: 'hsl(var(--cs-dark-blue))',
+				altField: 'hsl(var(--cs-alt-field))',
+				red: 'hsl(var(--cs-red))',
+			  },
   		}
   	}
   },
