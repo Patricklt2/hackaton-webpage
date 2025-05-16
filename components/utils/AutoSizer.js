@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-// Some overhead but more performant
+// Some overhead but more performant than manually prefixing each class
 // Remember to add component sizes as per expected
 const fontSizeBaseMap = {
     '2xs': "text-[0.625rem]",
