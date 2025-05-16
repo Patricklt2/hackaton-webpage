@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 // Some overhead but more performant
-
+// Remember to add component sizes as per expected
 const fontSizeBaseMap = {
     '2xs': "text-[0.625rem]",
     xs: "text-xs",

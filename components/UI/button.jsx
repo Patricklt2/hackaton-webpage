@@ -34,6 +34,7 @@ const buttonVariants = cva(
   }
 )
 
+//Remember to add the responsive classes to the shadcn components
 const Button = React.forwardRef(({ className, variant, size, asChild = false,  rSize = [], rFontSize = [], ...props }, ref) => {
   const Comp = asChild ? Slot : "button"
   
