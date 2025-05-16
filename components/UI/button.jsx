@@ -5,7 +5,7 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -16,7 +16,7 @@ const buttonVariants = cva(
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-          ingresar: "bg-cs-lightBlue border border-input hover:bg-transparent hover:text-cs-lightBlue hover:border-cs-lightBlue text-cs-darkBlue text-xl",
+          ingresar: "bg-cs-lightBlue border border-input hover:bg-transparent hover:text-cs-lightBlue hover:border-cs-lightBlue text-cs-darkBlue",
           inscribirse: "bg-cs-lightOrange border rounded-[4px] border-input hover:bg-transparent hover:text-cs-lightOrange hover:border-cs-lightOrange text-cs-darkBlue",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
@@ -26,7 +26,7 @@ const buttonVariants = cva(
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
-        responsive: `
+        ingresarResponsive: `
         text-[0.625rem] xs:text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl
         h-4 xs:h-5 sm:h-6 md:h-7 lg:h-8 xl:h-10
         px-0.5 xs:px-0.5 sm:px-1 md:px-2 lg:px-2 xl:px-3
@@ -37,7 +37,6 @@ const buttonVariants = cva(
     },
     defaultVariants: {
       variant: "default",
-      size: "default",
     },
   }
 )
