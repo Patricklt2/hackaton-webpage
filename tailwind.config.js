@@ -65,6 +65,10 @@ module.exports = {
 				altField: 'hsl(var(--cs-alt-field))',
 				red: 'hsl(var(--cs-red))',
 			  },
+			          linkedin: {
+          400: '#9bdaf3',
+          500: '#00A0DC'
+        }
   		}
   	}
   },
