@@ -43,6 +43,7 @@ const ResizableImage = React.forwardRef(
       rSize[5] && `xl:w-[${rSize[5]}]`,
     ].filter(Boolean).join(' ')
 
+    // Totally a magic
     const calculatedWidth = width || (ratio ? 1000 : undefined)
     const calculatedHeight = height || (ratio && calculatedWidth ? Math.round(calculatedWidth / ratio) : undefined)
 
@@ -50,7 +51,6 @@ const ResizableImage = React.forwardRef(
       src,
       alt,
       className: cn(
-        'h-full w-full',
         fit === 'cover' && 'object-cover',
         fit === 'contain' && 'object-contain',
         fit === 'fill' && 'object-fill'
@@ -72,7 +72,6 @@ const ResizableImage = React.forwardRef(
         )}
         ref={asChild ? undefined : ref}
       >
-
           <Image {...imageProps}/>
       </Comp>
     )
