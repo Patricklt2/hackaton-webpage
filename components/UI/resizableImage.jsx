@@ -25,7 +25,7 @@ const ResizableImage = React.forwardRef(
     },
     ref
   ) => {
-    const [aspectRatio, setAspectRatio] = React.useState(6/2);
+    const [aspectRatio, setAspectRatio] = React.useState(16/9);
     const uniqueClass = React.useMemo(() => {
       const hash = widths.join('-').replace(/%/g, 'pct');
       return `resizable-img-${hash}`;
