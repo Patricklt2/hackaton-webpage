@@ -3,7 +3,7 @@
 import React from "react";
 import { Container, Flex, Spacer } from "@chakra-ui/react";
 import NewNavbar from "../NewNavbar";
-import Footer from "../Footer";
+import Footer from "../UI/footer";
 
 const Main = ({ children }) => {
   return (
