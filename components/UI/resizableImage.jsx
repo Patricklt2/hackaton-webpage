@@ -26,30 +26,24 @@ const ResizableImage = React.forwardRef(
     ref
   ) => {
     const [aspectRatio, setAspectRatio] = React.useState(16/9);
-    const uniqueClass = React.useMemo(() => {
-      const hash = widths.join('-').replace(/%/g, 'pct');
-      return `resizable-img-${hash}`;
-    }, [widths]);
 
-    const css = React.useMemo(() => {
-      let styles = `.${uniqueClass} { position: relative; }\n`;
+    const uniqueClass = `resizable-img-${widths.join('-').replace(/%/g, 'pct')}`;
+    
+    let css = `.${uniqueClass} { position: relative; }\n`;
+    
+    widths.forEach((width, index) => {
+      const value = typeof width === 'number' ? `${width}px` : width;
       
-      widths.forEach((width, index) => {
-        const value = typeof width === 'number' ? `${width}px` : width;
-        
-        if (index === 0) {
-          styles += `.${uniqueClass} { width: ${value}; height: ${value}; }\n`;
-        } else {
-          const bp = Object.keys(breakpoints)[index - 1];
-          const min = breakpoints[bp];
-          styles += `@media (min-width: ${min}px) {
-            .${uniqueClass} { width: ${value}; height: ${value}; }
-          }\n`;
-        }
-      });
-      
-      return styles;
-    }, [uniqueClass, widths]);
+      if (index === 0) {
+        css += `.${uniqueClass} { width: ${value}; height: ${value}; }\n`;
+      } else {
+        const bp = Object.keys(breakpoints)[index - 1];
+        const min = breakpoints[bp];
+        css += `@media (min-width: ${min}px) {
+          .${uniqueClass} { width: ${value}; height: ${value}; }
+        }\n`;
+      }
+    });
 
     const handleImageLoad = (event) => {
       const { naturalWidth, naturalHeight } = event.currentTarget;
