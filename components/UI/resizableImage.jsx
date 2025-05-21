@@ -35,12 +35,12 @@ const ResizableImage = React.forwardRef(
       const value = typeof width === 'number' ? `${width}px` : width;
       
       if (index === 0) {
-        css += `.${uniqueClass} { width: ${value}; height: ${value}; }\n`;
+        css += `.${uniqueClass} { width: ${value}; }\n`;
       } else {
         const bp = Object.keys(breakpoints)[index - 1];
         const min = breakpoints[bp];
         css += `@media (min-width: ${min}px) {
-          .${uniqueClass} { width: ${value}; height: ${value}; }
+          .${uniqueClass} { width: ${value}; }
         }\n`;
       }
     });
