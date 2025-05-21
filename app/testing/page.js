@@ -49,16 +49,14 @@ const Footer = () => {
             <HStack className="w-full" justify="end" spacing="sm">
                 <ResizableImage
                     src={HackITBAImage}
-                    ratio={16/9}
-                    rSize={['16%']}
                     alt="HackITBA Image"
-                />
+                    widths={["20%", "16%"]}
+                /> 
                 <ResizableImage
                     src={CSImage}
                     alt="IEEE Computer Society Image" 
-                    ratio={16/9}
-                    rSize={['16%']}
                     className="pr-[1%] pb-[1%]"
+                    widths={["20%", "16%"]}
                 />
             </HStack>
         </VStack>
